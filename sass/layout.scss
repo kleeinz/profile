@@ -21,14 +21,14 @@
         justify-content: center;
         list-style: none;
         li {
-            padding: 1rem;
             cursor: pointer;
             text-align: center;
             transition: all .3s;
         }
 
         li:hover {
-            background-color: rgba(204,47,34, .4);
+            background-color: rgba(170,51,29, .7);
+           // background-color: rgba(204,47,34, .4);
         }
 
         li:hover > a {
@@ -39,6 +39,8 @@
            text-decoration: none;
            color: #444; 
            font-size: 1.8rem;
+           display: block;
+           padding: 1rem;
         }
     }
 

@@ -35,18 +35,19 @@ body {
     justify-content: center;
     list-style: none; }
     .menu .menu-options-container li {
-      padding: 1rem;
       cursor: pointer;
       text-align: center;
       transition: all .3s; }
     .menu .menu-options-container li:hover {
-      background-color: rgba(204, 47, 34, 0.4); }
+      background-color: rgba(170, 51, 29, 0.7); }
     .menu .menu-options-container li:hover > a {
       color: #fff; }
     .menu .menu-options-container li > a {
       text-decoration: none;
       color: #444;
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      display: block;
+      padding: 1rem; }
   .menu .social-networks-container {
     justify-content: flex-end;
     list-style: none; }
