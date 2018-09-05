@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; }
+
+.menu {
+  flex: 0 0 auto;
+  width: 7rem;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column; }
+  .menu .logo-container, .menu .menu-options-container, .menu .social-networks-container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column; }
+  .menu .menu-options-container {
+    justify-content: center;
+    list-style: none; }
+    .menu .menu-options-container li {
+      padding: 1rem;
+      cursor: pointer;
+      text-align: center;
+      transition: all .3s; }
+    .menu .menu-options-container li:hover {
+      background-color: rgba(204, 47, 34, 0.4); }
+    .menu .menu-options-container li:hover > a {
+      color: #fff; }
+    .menu .menu-options-container li > a {
+      text-decoration: none;
+      color: #444;
+      font-size: 1.8rem; }
+  .menu .social-networks-container {
+    justify-content: flex-end;
+    list-style: none; }
+    .menu .social-networks-container li {
+      padding: 1rem;
+      cursor: pointer;
+      text-align: center; }
+    .menu .social-networks-container li:hover > a {
+      color: #fff; }
+    .menu .social-networks-container li > a {
+      text-decoration: none;
+      color: #444;
+      font-size: 1.4rem; }
+
+.main {
+  flex: 1 1 auto;
+  background-color: #252627; }
