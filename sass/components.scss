@@ -1,0 +1,46 @@
+.menu {
+    list-style: none;
+    position: relative;
+
+    li > a {
+        color: #808080;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.7rem;
+        display: block;
+        transition: all .2s;
+    }
+
+    &.bottom {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        li > a {
+            font-size: 1.4rem;
+            transition: color .6s;
+        }
+
+        li > a:hover {
+            color: #FFF;
+        }
+    }
+}
+
+.li-hover > a:hover {
+    background-color: #003580;
+    color: #FFF;
+}
+
+.logo-container > a {
+    color: #FFF;
+    font-size: 3rem;
+    background-color: #003580;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+
+
