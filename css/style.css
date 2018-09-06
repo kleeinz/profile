@@ -66,10 +66,13 @@ section:focus {
     .menu.bottom li > a:hover {
       color: #FFF; }
 
-.li-hover > a:link:hover,
-.li-hover > a:visited:hover,
 .li-hover > a.active {
   background-color: #003580;
+  color: #FFF; }
+
+.li-hover > a:link:hover:not(.active),
+.li-hover > a:visited:hover:not(.active) {
+  background-color: rgba(0, 53, 128, 0.4);
   color: #FFF; }
 
 .logo-container > a:link,
