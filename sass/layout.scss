@@ -1,3 +1,5 @@
+section:focus {outline:0;}
+
 .side-bar {
     width: 7rem;
     height: 100vh;
@@ -15,6 +17,7 @@
     width: 50%;
     height: 100%;
     float: left;
+    color: #FFF;
 }
 
 .one {
