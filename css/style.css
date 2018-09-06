@@ -67,7 +67,7 @@ section:focus {
       color: #FFF; }
 
 .li-hover > a.active {
-  background-color: #003580;
+  background-color: #80122B;
   color: #FFF; }
 
 .li-hover > a:link:hover:not(.active),
