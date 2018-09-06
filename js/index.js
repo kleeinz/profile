@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('a[href*="#"]')
+    /*$('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
@@ -19,7 +19,7 @@ $(document).ready(function () {
           event.preventDefault();
           $('html, body').animate({
             scrollTop: target.offset().top
-          }, 1000, function() {
+          }, 500, function() {
             // Callback after animation
             // Must change focus!
             var $target = $(target);
@@ -33,10 +33,26 @@ $(document).ready(function () {
           });
         }
       }
-    });
+    });*/
+    $(document).on("scroll", onScroll);
 });
 
 $('.menu > li > a').click(function(){
     $('a').removeClass("active");
     $(this).addClass("active");
 });
+
+function onScroll(event){
+  var scrollPos = $(document).scrollTop();
+  $('.menu > li > a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('a').removeClass("active");
+          currLink.addClass("active");
+      }
+      else{
+          currLink.removeClass("active");
+      }
+      });
+  }
