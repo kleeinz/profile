@@ -59,17 +59,21 @@ section:focus {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0; }
-    .menu.bottom li > a {
+    .menu.bottom li > a:link,
+    .menu.bottom li > a:visited {
       font-size: 1.4rem;
       transition: color .6s; }
     .menu.bottom li > a:hover {
       color: #FFF; }
 
-.li-hover > a:hover {
+.li-hover > a:link:hover,
+.li-hover > a:visited:hover,
+.li-hover > a.active {
   background-color: #003580;
   color: #FFF; }
 
-.logo-container > a {
+.logo-container > a:link,
+.logo-container > a:visited {
   color: #FFF;
   font-size: 3rem;
   background-color: #003580;

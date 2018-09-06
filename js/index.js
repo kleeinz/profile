@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
@@ -35,6 +34,9 @@ $(document).ready(function () {
         }
       }
     });
+});
 
-    
+$('.menu > li > a').click(function(){
+    $('a').removeClass("active");
+    $(this).addClass("active");
 });
