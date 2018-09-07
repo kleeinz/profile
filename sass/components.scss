@@ -3,7 +3,7 @@
     position: relative;
 
     li > a {
-        color: #808080;
+        color: var(--secondary-medium-color);
         text-align: center;
         padding: 1rem;
         font-size: 1.7rem;
@@ -24,27 +24,26 @@
         }
 
         li > a:hover {
-            color: #FFF;
+            color: var(--tertiary-color);
         }
     }
 }
 
 .li-hover > a.active {
-    background-color: #80122B;
-    color: #FFF;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
 .li-hover > a:link:hover:not(.active),
 .li-hover > a:visited:hover:not(.active) {
-    background-color: rgba(0,53,128, .4);
-    color: #FFF;
+    background-color: var(--button-primary-color);
+    color: var(--primary-color);;
 }
 
 .logo-container > a:link,
 .logo-container > a:visited {
-    color: #FFF;
+    color: var(--tertiary-color);
     font-size: 3rem;
-    background-color: #003580;
     display: block;
     padding: 1rem;
     text-align: center;
