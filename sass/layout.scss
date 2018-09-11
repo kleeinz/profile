@@ -1,33 +1,19 @@
-section:focus {outline:0;}
-
-.side-bar {
-    width: 7rem;
+.header {
     height: 100vh;
-    position: fixed;
-    background-color: var(--primary-color);
-    box-shadow: .3rem 0 .3rem var(--shadow-primary-color);
+    position: relative;
 }
 
-.home-section, .about-section, .education-section, .skills-section, .contact-section {
-    height: 100vh;
-    margin-left: 7rem;
-    overflow: hidden;
+.principal-container {
+    width: 60%;
+    height: 35rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
 }
 
-.one {
-    height: 60rem;
-    display: block;
-    margin: 0 6rem 0 6rem;
-    background-color: var(--primary-color);
-    box-shadow: .3rem .3rem .3rem var(--shadow-primary-color);
-}
-
-.first-aside {
-    margin-top: 6rem;
-}
-
-.logo-container {
+.principal {
+    position: relative;
     width: 100%;
-    margin-bottom: 20rem;
-    border-bottom: .2rem solid var(--secondary-color);
+    height: 100%;
 }

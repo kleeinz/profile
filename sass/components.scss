@@ -1,54 +1,132 @@
-.menu {
-    list-style: none;
+.navbar {
+    height: 12rem;
     position: relative;
-
-    li > a {
-        color: var(--secondary-medium-color);
-        text-align: center;
-        padding: 1rem;
-        font-size: 1.7rem;
-        display: block;
-        transition: all .2s;
-    }
-
-    &.bottom {
+    
+    
+    ul.menu {
+        margin-right: 10rem;
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
+        top:50%;
+        right: 0;
+        transform:translateY(-50%);
+        list-style: none;
+        float: right;
+        li.item {
+            display: inline-block;
+            font-size: 1.3rem;
+            margin: 0 1rem;
+           
+            & > a {
+                text-decoration: none;
+                display: block;
+                padding: 1rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+     
+        li.item:not(:last-child) > a {
+            color: #829ead;
+            transition: color .3s;
+        }
         
-        li > a:link,
-        li > a:visited {
-            font-size: 1.4rem;
-            transition: color .6s;
+        li.item:hover:not(:last-child) > a {
+            color: #235784;
         }
 
-        li > a:hover {
-            color: var(--tertiary-color);
+        li.item:last-child > a {
+            border: .2rem solid #40a8c4;
+            border-radius: .5rem;
+            color: #40a8c4;
+            transition: all .3s;
         }
+
+        li.item:last-child:hover > a {
+            background-color: #40a8c4;
+            color: #FFF;
+        }
+
     }
 }
 
-.li-hover > a.active {
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
+.diamond {
+    width: 5rem;
+    height: 5rem;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: #235784;
+    position: absolute;
+    top:  2.5rem;
+    left: -2.6rem;
+    z-index: 1;
 }
 
-.li-hover > a:link:hover:not(.active),
-.li-hover > a:visited:hover:not(.active) {
-    background-color: var(--button-primary-color);
-    color: var(--primary-color);;
+.principal:after {
+    content: '';
+    position: absolute;
+    top: 2.5rem;
+    left: -.2rem;
+    width: .2rem;
+    height: calc(100% - 2.5rem);
+    background-color: #235784;
 }
 
-.logo-container > a:link,
-.logo-container > a:visited {
-    color: var(--tertiary-color);
-    font-size: 3rem;
-    display: block;
-    padding: 1rem;
-    text-align: center;
+.principal {
+    & > h1, & > h4, p {
+        padding-left: 7rem;
+    }
 
+    & > h1 {
+        padding-top: 3.5rem;
+        color: #596e79;
+        font-size: 2rem;
+    }
+
+    & > h4 {
+        padding-top: 2rem;
+        color: #829ead;
+        font-size: 1.6rem;
+    }
+
+    & > p {
+        padding-top: 2rem;
+        color: #bdc6cc;
+        font-size: 1.2rem;
+        width: 40rem;
+    }
 }
 
+.profile-image {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background-image: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../imgs/yo.png);
+    background-size: cover;
+    background-position: center;
+    left: calc(100% - 30rem);
+    transform: translateY(-50%);
+    border-radius: 50%;
+    top: 50%;
+    box-shadow: .3rem .3rem 1rem rgba(0,0,0,.4);
+    border: .2rem solid #235784;
+}
 
+.social-menu {
+    list-style: none;
+    margin-top: 2rem;
+    margin-left: 7rem;
 
+    & > li.item {
+        display: inline-block;
+
+        & > a {
+            display: block;
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: #235784;
+        }
+    }
+
+    & > li.item:not(:first-child) {
+       margin-left: 3rem;
+    }
+}
